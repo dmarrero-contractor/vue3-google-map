@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.20.1](https://github.com/dmarrero-contractor/vue3-google-map/compare/v0.20.0...v0.20.1) (2024-03-14)
+
 ## 0.20.0 (2024-03-14)
 
 
