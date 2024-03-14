@@ -1,13 +1,13 @@
 {
-  "name": "vue3-google-map",
+  "name": "vue3-google-map-fork",
   "version": "0.20.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/inocan-group/vue3-google-maps.git"
+    "url": "https://github.com/dmarrero-contractor/vue3-google-map"
   },
   "homepage": "https://vue3-google-map.com",
-  "description": "A set of composable components for easy use of Google Maps in your Vue 3 projects.",
+  "description": "A set of composable components for easy use of Google Maps in your Vue 3 projects, with optional use of algorithm in MarkerCluster",
   "unpkg": "dist/index.umd.js",
   "jsdelivr": "dist/index.umd.js",
   "main": "dist/index.cjs.js",
