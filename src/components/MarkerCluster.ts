@@ -16,6 +16,10 @@ export default defineComponent({
       type: Object as PropType<MarkerClustererOptions>,
       default: () => ({}),
     },
+    useAlgorithm: {
+      type: Boolean,
+      default: true,
+    },
   },
   emits: markerClusterEvents,
   setup(props, { emit, expose, slots }) {
@@ -34,7 +38,9 @@ export default defineComponent({
               map: map.value,
               // Better perf than the default `SuperClusterAlgorithm`. See:
               // https://github.com/googlemaps/js-markerclusterer/pull/640
-              algorithm: new SuperClusterViewportAlgorithm(props.options.algorithmOptions ?? {}),
+              algorithm: props.useAlgorithm
+                ? new SuperClusterViewportAlgorithm(props.options.algorithmOptions ?? {})
+                : undefined,
               ...props.options,
             })
           );
